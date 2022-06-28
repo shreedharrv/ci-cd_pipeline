@@ -1,0 +1,7 @@
+---
+ -  hosts: localhost
+    name: install jenkins and java
+    become: yes
+    tasks: 
+     -  name: install java and jenkins
+        script: master.sh 
