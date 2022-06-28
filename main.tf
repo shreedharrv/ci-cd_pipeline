@@ -1,14 +1,14 @@
 provider "aws" {
 region= "us-east-1"
-access_key= "AKIA4DPPPJ2UVK6DUXKC"
-secret_key= "gyWQzHBvX3Uns9WuHur74epWJAJ9L1aR+av7RqL7"
+access_key= "# your IAM role access key"
+secret_key= "# your IAM role secret key"
 }
 
 resource "aws_instance" "slave1" {
 ami= "ami-052efd3df9dad4825"
 instance_type= "t2.micro"
-key_name= "RedHatKP"
-security_groups= ["launch-wizard-1"]
+key_name= "# your keypair"
+security_groups= ["# your security group name"]
 tags= {
 Name= "slave1"
 }
@@ -17,8 +17,8 @@ Name= "slave1"
 resource "aws_instance" "slave2"{
 ami = "ami-052efd3df9dad4825"
 instance_type="t2.micro"
-key_name= "RedHatKP"
-security_groups = ["launch-wizard-1"]
+key_name= "# your keypair"
+security_groups = ["# your security group name"]
  tags = {
  Name = "slave2"
  }
