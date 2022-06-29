@@ -3,6 +3,7 @@ CI/CD pipeline for an app, design implement Continuous Integration and Continuou
 Complete pipeline from code push to github to deploying the built and tested code into the required server.
 
 Steps:
+
 1.Building infrastructure using terraform.
 
 2.Installing ansible and creating hosts and obtaining an ssh connection.
