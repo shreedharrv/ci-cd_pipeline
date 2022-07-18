@@ -20,7 +20,9 @@ Steps:
   4.Creating the hosts file in the master.
 -	Go to the host file location using the command $ sudo nano /etc/ansible/hosts 
 -	Inside the file add your slave/slaves in the last line of file with the following command 
+    
     [slaves]                                                   ------------(group_name)
+    
     slave1 ansible_host=<slave-ip-address>                     ------------(servers in the group)
 -	can verify it by using command $ ansible -m ping all 
 
