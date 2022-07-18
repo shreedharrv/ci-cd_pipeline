@@ -5,3 +5,10 @@
     tasks: 
      -  name: install java and jenkins
         script: master.sh 
+
+ -  hosts: <slave-name>
+    name: install docker and java
+    become: yes
+    tasks: 
+     -  name: install docker and java
+        script: slave.sh 
